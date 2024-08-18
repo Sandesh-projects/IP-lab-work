@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="https://twitter.com">
+                    <img src="twitter.png" alt="Twitter Logo" width="50" height="50">Twitter
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#details" class="menu-btn">Details</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#Visual" class="menu-btn">Visual</a></li>
+                <li><a href="#details-table" class="menu-btn">Company-detail</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="details" class="details">
+            <div class="profile-header">
+                <img src="twitter.png" alt="Profile Banner" class="banner-image" style="height: 20px; width: 20px;">
+                <div class="profile-info">
+                    <img src="Twitter-Logo.jpg" alt="Profile Picture" class="profile-pic">
+                    <h1>Twitter</h1>
+                    <p class="location">San Francisco, CA</p>
+                    <p class="description">
+                        Twitter, Inc. was an American social media company based in San Francisco, California,
+                        which operated and was named for its flagship social media network prior to its rebrand as X. 
+                        In addition to Twitter, the company previously operated the Vine short video app and 
+                        Periscope livestreaming service.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Tweets
+                    <ul>
+                        <li>Content</li>
+                        <li>Format
+                            <ul>
+                                <li>Hashtags</li>
+                                <li>Usernames</li>
+                                <li>Retweets</li>
+                                <li>Replies</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Adding and following content</li>
+                <li>Verified accounts</li>
+                <li>Mobile</li>
+                <li>Third-party applications</li>
+            </ul>
+        </section>
+
+        <section class="media" id="Visual">
+            <div class="audio">
+                <h2>Introduction Audio</h2>
+                <audio controls>
+                    <source src="twitter_audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="video">
+                <h2>Introduction Video</h2>
+                <video controls autoplay loop muted width="640" height="360">
+                    <source src="twitter.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="details-tables" id="details-table">
+            <h2>Company Details</h2>
+            <table>
+                <caption>Company Details</caption>
+                <tr>
+                    <th>Name</th>
+                    <td>Twitter</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>San Francisco, CA</td>
+                </tr>
+                <tr>
+                    <th>Contact</th>
+                    <td>contact@twitter.com</td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td>
+                        Twitter, Inc. was an American social media company based in San Francisco, California,
+                        which operated and was named for its flagship social media network prior to its rebrand as X. 
+                        In addition to Twitter, the company previously operated the Vine short video app and 
+                        Periscope livestreaming service.
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Twitter, Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
