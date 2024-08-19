@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (orderData) {
         // Populate the receipt with data
-        document.getElementById('order-date').textContent = orderData.deliveryDate;
+        document.getElementById('order-date').textContent = new Date().toLocaleDateString();
         document.getElementById('product-quantity').textContent = orderData.quantity;
         document.getElementById('product-total').textContent = `$${(20.00 * orderData.quantity).toFixed(2)}`;
         document.getElementById('recipient-name').textContent = orderData.recipientName;

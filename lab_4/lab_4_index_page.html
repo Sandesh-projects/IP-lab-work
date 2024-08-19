@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fourth Lab</title>
+    <title>Customized Twitter-Shirt Order</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 
 <body>
     <h1>Order Your Customized Twitter-shirt</h1>
-    <form action="">
+    <form id="orderForm">
         <fieldset>
             <legend>Customize your T-shirt</legend>
-            <label for="tagline">Tagline on T-shirt : </label>
-            <input type="text" id="tagline" name="tagline" placeholder="Enter your tagline" required>
+            <label for="tagline">Tagline on T-shirt:</label>
+            <input type="text" id="tagline" name="tagline" placeholder="Enter your tagline" required maxlength="50">
             <br><br>
 
-            <label for="color">Color :</label>
-            <select name="color" id="color">
+            <label for="color">Color:</label>
+            <select name="color" id="color" required>
                 <option value="" disabled selected>Select Color</option>
                 <option value="red">Red</option>
                 <option value="blue">Blue</option>
@@ -43,7 +43,7 @@
             <input type="number" name="quantity" id="quantity" min="1" max="50" value="1" required>
             <br><br>
 
-            <label for="delivery-date">Delivery-Date:</label>
+            <label for="delivery-date">Delivery Date:</label>
             <input type="date" name="delivery-date" id="delivery-date" required>
             <br><br>
             <fieldset>
@@ -62,7 +62,7 @@
                 <br><br>
 
                 <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter recipient's phone number" pattern="[0-9]{10}" required>
+                <input type="tel" id="phone" name="phone" placeholder="Enter recipient's phone number" required pattern="[0-9]{9}">
                 <br><br>
             </fieldset>
 
@@ -71,4 +71,5 @@
         </fieldset>
     </form>
 </body>
+
 </html>
