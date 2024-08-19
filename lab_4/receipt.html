@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Receipt</title>
+    <link rel="stylesheet" href="receipt.css">
+    <script type="module" src="receipt.js" defer></script>
+</head>
+
+<body>
+    <div class="receipt-container">
+        <header class="receipt-header">
+            <h1>Order Receipt</h1>
+        </header>
+
+        <section class="order-details">
+            <h2>Order Summary</h2>
+            <p><strong>Order Number:</strong> #123456</p>
+            <p><strong>Order Date:</strong> <span id="order-date"></span></p>
+        </section>
+
+        <section class="product-details">
+            <h2>Product Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Customized Twitter-Shirt</td>
+                        <td id="product-quantity"></td>
+                        <td>$20.00</td>
+                        <td id="product-total"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="shipping-details">
+            <h2>Shipping Details</h2>
+            <p><strong>Recipient's Name:</strong> <span id="recipient-name"></span></p>
+            <p><strong>Address:</strong> <span id="address"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+        </section>
+
+        <section class="total">
+            <h2>Total Cost</h2>
+            <p><strong>Subtotal:</strong> <span id="subtotal"></span></p>
+            <p><strong>Shipping:</strong> $5.00</p>
+            <p><strong>Total:</strong> <span id="total"></span></p>
+        </section>
+
+        <footer class="receipt-footer">
+            <p>Thank you for your order!</p>
+        </footer>
+    </div>
+</body>
+
+</html>
