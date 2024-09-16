@@ -1,0 +1,23 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 5px;
+  font-weight: bold;
+}
