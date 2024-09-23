@@ -1,0 +1,16 @@
+/* src/components/Navbar/Navbar.css */
+.navbarScroll.navbarDark {
+  background-color: black;
+
+}
+
+.navbar{
+  color: red;
+  background-color: rgb(255, 166, 0);
+  position: sticky;
+}
+
+.navbar-collapse{
+  color: red;
+  font-style: normal;
+}
