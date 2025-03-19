@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Requests - Sandesh Portfolio{% endblock %}
+
+{% block content %}
+<h1 class="text-center mt-5">All Requests</h1>
+<hr>
+
+{% if contacts %}
+<div class="table-responsive">
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contact in contacts %}
+            <tr>
+                <td>{{ contact.id }}</td>
+                <td>{{ contact.name }}</td>
+                <td>{{ contact.email }}</td>
+                <td>{{ contact.subject }}</td>
+                <td>{{ contact.message }}</td>
+                <td>
+                    <!-- Delete link calls /delete/<id> -->
+                    <a href="{{ url_for('delete_contact', contact_id=contact.id) }}" class="btn btn-danger btn-sm">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+<p>No contact requests found.</p>
+{% endif %}
+{% endblock %}

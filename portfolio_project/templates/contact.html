@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Contact - Sandesh Portfolio{% endblock %}
+
+{% block content %}
+<h1 class="text-center mt-5">Contact Me</h1>
+<hr>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <!-- Replace YOUR_API_KEY with a valid Google Maps API key if you have one -->
+        <iframe style="width:100%; height:300px;" frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=worli&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+    </div>
+    <div class="col-md-6">
+        <form method="POST" action="{{ url_for('contact') }}">
+            <input type="text" class="form-control mt-3" name="name" placeholder="Name" required>
+            <input type="email" class="form-control mt-3" name="email" placeholder="Email" required>
+            <input type="text" class="form-control mt-3" name="subject" placeholder="Subject" required>
+            <textarea class="form-control mt-3" name="message" rows="4" placeholder="Message (max 500 characters)"
+                required></textarea>
+            <button type="submit" class="btn btn-success mt-3">Send Message</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

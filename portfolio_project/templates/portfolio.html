@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Portfolio - Sandesh Portfolio{% endblock %}
+
+{% block content %}
+<h1 class="text-center mt-5">Projects</h1>
+<div class="row">
+    {% for project in projects %}
+    <div class="col-lg-4 mt-4">
+        <div class="card">
+            <!-- Use the project.image from your `app.py` projects list -->
+            <img class="card-img-top" src="{{ url_for('static', filename='images/' ~ project.image) }}"
+                alt="{{ project.title }}" style="width:100%" height="200">
+            <div class="card-body">
+                <h4 class="card-title">{{ project.title }}</h4>
+                <p class="card-text">{{ project.description }}</p>
+                <div class="text-center">
+                    <a href="{{ project.link }}" target="_blank" class="btn btn-success">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

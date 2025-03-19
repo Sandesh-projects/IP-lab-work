@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Success - Sandesh Portfolio{% endblock %}
+
+{% block content %}
+<h1 class="text-center mt-5">Thank You!</h1>
+<p class="text-center">Your message has been received. Here are the details:</p>
+
+<ul class="list-group mx-auto" style="max-width: 600px;">
+    <li class="list-group-item"><strong>Name:</strong> {{ name }}</li>
+    <li class="list-group-item"><strong>Email:</strong> {{ email }}</li>
+    <li class="list-group-item"><strong>Subject:</strong> {{ subject }}</li>
+    <li class="list-group-item"><strong>Message:</strong> {{ message }}</li>
+</ul>
+
+<div class="text-center mt-3">
+    <a href="{{ url_for('home') }}" class="btn btn-primary">Go Back</a>
+</div>
+{% endblock %}
