@@ -13,7 +13,7 @@ projects = [
             "responsive design."
         ),
         "image": "Myntra Clone.png",
-        "link": "https://www.youtube.com"
+        "link": "https://sandesh-projects.github.io/IP-lab-work/Practice%20Myntra%20Clone/myntra.html"
     },
     {
         "title": "Mentorlink App",
@@ -33,7 +33,7 @@ projects = [
             "Features interactive gameplay, simple UI, and scoreboard tracking."
         ),
         "image": "batballstump.png",
-        "link": "https://www.flipkart.com/"
+        "link": "https://sandesh-projects.github.io/IP-lab-work/Bat%20Ball%20Stump%20optimize/batBallStump.html"
     }
 ]
 
